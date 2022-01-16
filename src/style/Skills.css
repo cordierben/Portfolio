@@ -1,0 +1,205 @@
+.skills{
+    background-color: rgba(14, 14, 14, 1);
+    overflow: hidden;
+    width: 100%;
+}
+
+#backTitle{
+    position: absolute;
+    opacity: 0.1;
+    color:#4F4F4F;
+    overflow: hidden;
+}
+
+#me{
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+}
+#title{
+    color: orange;
+}
+
+#skillList{
+    color:white;
+}
+
+#tool{
+    position: absolute;
+    color: orange;
+}
+
+#frontend h4,#backend h4,#else h4{
+    font-family: 'OpenSans-Bold';
+}
+
+
+#else table{
+    transition: all 2s ease-out;
+    transition-delay: 2s;
+    border-spacing:1em;
+}
+
+@media (max-width: 750px) {
+
+    .skills{
+        margin-top: -2%;
+    }
+    #backTitle{
+        font-size: 600%;
+        margin-top: -5%;
+    }
+
+    #me{
+        margin-top: -15%;
+        margin-left:0%;
+        width: 60%;
+        border-bottom: orange 1px solid;
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+    }
+
+    #desc{
+        width: 95%;
+        margin-right: 10%;
+        margin-top: 1%;
+    }
+
+    #desc h2{
+        font-size: 90%;
+        color: rgb(255, 174, 24);
+    }
+
+    #desc h6{
+        font-weight: 100;
+        font-size: 90%;
+        line-height: 200%;
+    }
+
+    #title{
+        font-size: 200%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    
+    #skillList{
+        margin-left: 5%;
+        width: 80%;
+        font-size: 100%;
+    }
+    
+    
+    #frontend h4,#backend h4,#else h4{
+        font-size:40% ;
+    }
+    
+    
+    #else table{
+        width: 70%;
+        margin-top: -10%;
+        border-spacing:1em;
+    }
+}
+
+@media (min-width: 750px) {
+    #backTitle{
+        margin-left: 10%;
+        margin-top: 2%;
+        font-size: 2000%;
+    }
+
+    #title{
+        font-size: 600%;
+        margin-left: 20%;
+        margin-top: 12%;
+    }
+
+    #me{
+        float: right;
+        margin-top: -25%;
+        width: 40%;
+        border-bottom: orange 1px solid;
+        animation-duration: 2s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+    }
+
+    
+    
+    #skillList{
+        margin-left: 15%;
+        margin-top: 10%;
+        font-size: 200%;
+    }
+    
+    #tool{
+        width:20%;
+        height: 20%;
+        margin-left:70%;
+        margin-top: -10%;
+    }
+
+    #firstSkills{
+        display: flex;
+    }
+
+    #desc{
+        width: 40%;
+        margin-right: 5%;
+        margin-top: 1%;
+    }
+
+    #desc h2{
+        font-size: 90%;
+        color: rgb(255, 174, 24);
+    }
+
+    #desc h6{
+        font-weight: 100;
+        line-height: 200%;
+    }
+    
+    #frontend h4,#backend h4,#else h4{
+        font-size:50% ;
+    }
+    
+    #secondSkills{
+        display: flex;
+    }
+    
+    #else{
+        margin-left: 10%;
+    }
+    
+    #else table{
+        width: 70%;
+        margin-top: -10%;
+        border-spacing:1em;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-right: -30%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: local('OpenSans-Bold'), url(../fonts/OpenSans-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src: local('OpenSans-Regular'), url(../fonts/OpenSans-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Medium';
+    src: local('OpenSans-Medium'), url(../fonts/OpenSans-Medium.ttf) format('truetype');
+  }

@@ -1,0 +1,159 @@
+.contact{
+    background-color: rgba(14, 14, 14, 1);
+    overflow: hidden;
+    width: 100%;
+    height: 1%;
+}
+
+
+#contactForm input:not(#submit),#contactForm textarea{
+    background-color: #4F4F4F;
+    border-color: transparent;
+    color:antiquewhite;
+}
+
+
+#contactForm textarea{
+    background-color: #4F4F4F;
+    border-color: transparent;
+    color:antiquewhite;
+}
+
+
+#contactDesc{
+    color: white;
+    text-align: center;
+}
+
+#inputName,#inputEmail{
+    display: inline-block;
+}
+
+#submit{
+    background-color: transparent;
+    text-align: center;
+    border:solid 1px orange;
+    float:right;
+    width: fit-content;
+    color: orange;
+    transition: ease-out 0.4s;
+    outline:none;
+    box-shadow: inset 0 0 0 0 orange;
+    cursor: pointer;
+}
+
+#submit:hover{
+    color:white;
+    box-shadow: inset 300px 0 0 0 rgb(255, 166, 0);
+}
+
+
+@media (max-width: 750px) {
+
+    .contact{
+        margin-top: -2%;
+    }
+    #contactForm{
+        width: 90%;
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+    
+    #contactForm input:not(#submit),#contactForm textarea{
+        font-size: 120%;
+    }
+    
+    #contactForm textarea{
+        height:100px;
+    }
+    
+    #contactForm input:not(#submit){
+        height: 50px;
+    }
+    
+    #contactDesc{
+        font-size: 100%;
+        margin-bottom: 5%;
+    }
+    
+    #inputName,#inputEmail{
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    
+    #inputSubject,#inputMessage{
+        margin-left: 5%;
+        width:86%;
+        margin-bottom: 3%;
+    }
+    
+    #submit{
+        width: 80%;
+        font-size: 100%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    #error{
+        margin-left: 10%;
+        text-align: center;
+        width: 80%;
+        transition: 1s;
+    }
+}
+
+@media (min-width: 750px) {
+    #contactForm{
+        width: 50%;
+        margin-top: 10%;
+        margin-left: 25%;
+    }
+    
+    #contactForm input:not(#submit),#contactForm textarea{
+        font-size: 120%;
+    }
+    
+    #contactForm textarea{
+        height:100px;
+    }
+    
+    #contactForm input:not(#submit){
+        height: 50px;
+    }
+    
+    #contactDesc{
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+    
+    #inputName,#inputEmail{
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    
+    #inputSubject,#inputMessage{
+        margin-left: 5%;
+        width:86%;
+        margin-bottom: 3%;
+    }
+    
+    #submit{
+        width: 20%;
+        padding:2%;
+        font-size: 120%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 20%;
+    }
+    
+    #error{
+        margin-left: 5%;
+        width: 50%;
+        transition: 1s;
+    }
+}
+
